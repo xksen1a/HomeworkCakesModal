@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order-modal.css">
+</head>
+<body>
+    <script defer src="script.js"></script>
+
+    <div id="order-modal-wrapper">
+        <div id="order-modal">
+            <button id="close-modal">&times;</button>
+            <h2><strong>Чтобы сделать заказ</strong>, расскажите нам о себе</h2>
+            <p>Мы перезвоним Вам в удобное время, чтобы уточнить ваши пожелания</p>
+
+            <form id="order-form">
+                <div class="form-grid">
+                    <input type="text" id="name" placeholder="Имя" required />
+                    <input type="tel" id="phone" placeholder="Номер телефона" required />
+                    <input type="email" id="email" placeholder="Адрес почты" />
+                    <input type="text" id="time" placeholder="Удобное время для звонка" />
+                </div>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="agreement" />
+                    <label for="agreement">Я согласен с условиями обработки персональных данных</label>
+                </div>
+
+                <button type="submit" id="submit-order" disabled>Совершить заказ</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="decorations">
+        <img id="berry1" src="/images/berry.png">
+        <img id="berry2" src="/images/berry.png">
+        <img id="berry3" src="/images/berry.png">
+    </div>
+    <section id="main-screen">
+        <header>
+            <div>Сладкий сундук</div>
+            <menu>
+                <div id="adress">
+                    <img src="/icons/location.svg" alt="Адрес">
+                    <div>г. Санкт-Петербург,<br>ул. Куйбышева 31</div>
+                </div>
+                <div id="phone">
+                    <img src="/icons/phone.svg" alt="Тел.">
+                    <div>
+                        <div id="phone-number">8 (812) 844-95-49</div>
+                        <div>Ежедневно с 9:00 до 20:00</div>
+                    </div>
+                </div>
+            </menu>
+        </header>
+        <main>
+            <div id="information">
+                <div id="marker">вкуснейшие</div>
+                <div id="text">
+                    <h1>Пирожные и капкейки<br>от 150 ₽/шт. с доставкой<br>по Санкт Петербургу</h1>
+                    <p>Приготовим за 3 часа в день заказа.<br>Доставка на авто в холодильнике.</p>
+                </div>
+            </div>
+            <div id="call-to-action">
+                <div id="button">Перейти в каталог</div>
+                <div id="describe">9 различных<br>видов на выбор</div>
+            </div>
+        </main>
+    </section>
+    <section id="selection-screen">
+        <div class="central-header">Для любых событий и дорогих вам людей</div>
+        <div id="products">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cake1.jpg">
+                </div>
+                <div class="card-information">
+                    <div class="card-text">
+                        <h1>Кремовый замок</h1>
+                        <p>Нежный крем любого цвета<br>на выбор, вафельная основа</p>
+                    </div>
+                    <div class="card-order">
+                        <div class="price">150 ₽/шт.</div>
+                        <div class="order-button">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cake2.jpg">
+                </div>
+                <div class="card-information">
+                    <div class="card-text">
+                        <h1>Малиновый рай</h1>
+                        <p>Воздушный крем, темная<br>основа и ягода малины</p>
+                    </div>
+                    <div class="card-order">
+                        <div class="price">150 ₽/шт.</div>
+                        <div class="order-button">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cake3.jpg">
+                </div>
+                <div class="card-information">
+                    <div class="card-text">
+                        <h1>Фейерверк</h1>
+                        <p>Разноцветные крем,<br>с бисквитной основой</p>
+                    </div>
+                    <div class="card-order">
+                        <div class="price">150 ₽/шт.</div>
+                        <div class="order-button">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cake4.jpg">
+                </div>
+                <div class="card-information">
+                    <div class="card-text">
+                        <h1>Шоколадный мир</h1>
+                        <p>Ореховая стружка, нежный<br>крем и шоколадная основа</p>
+                    </div>
+                    <div class="card-order">
+                        <div class="price">150 ₽/шт.</div>
+                        <div class="order-button">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cake5.jpg">
+                </div>
+                <div class="card-information">
+                    <div class="card-text">
+                        <h1>Слезы дракона</h1>
+                        <p>Нежный крем любого цвета<br>на выбор, вафельная основа</p>
+                    </div>
+                    <div class="card-order">
+                        <div class="price">150 ₽/шт.</div>
+                        <div class="order-button">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cake6.jpg">
+                </div>
+                <div class="card-information">
+                    <div class="card-text">
+                        <h1>Летняя фантазия</h1>
+                        <p>Украшения в форме сердец,<br>для любимого человека</p>
+                    </div>
+                    <div class="card-order">
+                        <div class="price">150 ₽/шт.</div>
+                        <div class="order-button">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cake7.jpg">
+                </div>
+                <div class="card-information">
+                    <div class="card-text">
+                        <h1>Мыс безумия</h1>
+                        <p>Разноцветная основа,<br>стружка и нежный крем</p>
+                    </div>
+                    <div class="card-order">
+                        <div class="price">150 ₽/шт.</div>
+                        <div class="order-button">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cake8.jpg">
+                </div>
+                <div class="card-information">
+                    <div class="card-text">
+                        <h1>Облачная сказка</h1>
+                        <p>Светлая основа, нежный<br>крем со стружкой сверху</p>
+                    </div>
+                    <div class="card-order">
+                        <div class="price">150 ₽/шт.</div>
+                        <div class="order-button">Заказать</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/cake9.jpg">
+                </div>
+                <div class="card-information">
+                    <div class="card-text">
+                        <h1>Темный рыцарь</h1>
+                        <p>Тёмная основа, нежный<br>крем и вкусные шарики</p>
+                    </div>
+                    <div class="card-order">
+                        <div class="price">150 ₽/шт.</div>
+                        <div class="order-button">Заказать</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="photography-screen">
+        <div class="central-title">
+            <div class="central-header">Сделали более 3.000 заказов за 2 года</div>
+            <div class="sub-header">Посмотрите фото реальных заказов из нашего instagram</div>
+        </div>
+        <div class="big-photos">
+            <img src="images/big-photo1.jpg">
+            <img src="images/big-photo2.jpg">
+            <img src="images/big-photo3.jpg">
+            <img src="images/big-photo4.jpg">
+            <img src="images/big-photo5.jpg">
+            <img src="images/big-photo6.jpg">
+            <img src="images/big-photo7.jpg">
+            <img src="images/big-photo8.jpg">
+            <img src="images/big-photo9.jpg">
+        </div>
+    </section>
+    <section id="order-screen">
+        <div class="clouds">
+            <img src="images/cloud1.png" alt="Облако">
+        </div>
+        <div class="big-order-box">
+            <div class="text-box">
+                <h2 class="big-text">Чтобы сделать заказ, укажите ваш телефон</h2>
+                <p class="small-text">Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</p>
+            </div>
+            <form class="order-form">
+                <div class="form-group">
+                    <div class="phone-input">
+                        <img src="icons/phone2.svg" alt="Телефон" class="phone-icon">
+                        <input type="tel" placeholder="Номер телефона" class="phone-field">
+                    </div>
+                    <button type="submit" class="order-button">Сделать заказ</button>
+                </div>
+                <label class="checkbox-agreement">
+                    <input type="checkbox" class="custom-checkbox">
+                    <span class="checkmark"></span>
+                    Нажамая на кнопку, вы соглашаетесь с <a href="#" class="underline">условиями обработки персональных данных</a>
+                </label>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="#">Согласие на обработку данных</a>
+                <a href="#">Служба поддержки</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="copyright">
+                © nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
